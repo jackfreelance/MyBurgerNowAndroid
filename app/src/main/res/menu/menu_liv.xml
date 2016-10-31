@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="my.burger.now.app.LivActivity">
+
+    <item
+        android:id="@+id/action_chat"
+        android:orderInCategory="200"
+        android:title="Chat"
+        android:icon="@drawable/ic_action_message"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:id="@+id/action_panier"
+        android:orderInCategory="200"
+        android:title="Pannier"
+        android:icon="@drawable/ic_action_bag"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@+id/action_disconect"
+        android:orderInCategory="300"
+        android:title="Deconnexion"
+        android:icon="@drawable/ic_action_exit"
+        app:showAsAction="always"></item>
+
+
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "594165073865",
+    "firebase_url": "https://myburgernow-1357.firebaseio.com",
+    "project_id": "myburgernow-1357",
+    "storage_bucket": "myburgernow-1357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594165073865:android:7357e64292332596",
+        "android_client_info": {
+          "package_name": "com.example.jack.burgeur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594165073865-lmsqbkq7tm9s3ifd6p75fk9b59e5999i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jack.burgeur",
+            "certificate_hash": "127C7886DAC56BEBF8164A63348773BC6D9CA704"
+          }
+        },
+        {
+          "client_id": "594165073865-bmb573bcn7t0gpeisc4eu83rlhlsiads.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKConn2vWY-TVkvJdHPZccm71iFDU4pjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594165073865-bmb573bcn7t0gpeisc4eu83rlhlsiads.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

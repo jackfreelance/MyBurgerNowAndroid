@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/msg_etape_go_fastfood"
+                    android:id="@+id/textView9"
+                    android:layout_weight="0.99"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_btn_send"
+                    android:id="@+id/buttonAuResto"
+                    android:background="@drawable/button_style"
+                    android:textStyle="normal|bold"
+                    android:textSize="9dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/msg_etape_fastfood"
+                    android:id="@+id/textView7"
+                    android:layout_weight="0.99"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_btn_send"
+                    android:id="@+id/buttonFixPrix"
+                    android:background="@drawable/button_style"
+                    android:textSize="9dp"
+                    android:textStyle="normal|bold"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/msg_etape_addr_liv"
+                    android:id="@+id/textView4"
+                    android:layout_weight="0.99"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msg_btn_send"
+                    android:id="@+id/buttonCodeRencontre"
+                    android:background="@drawable/button_style"
+                    android:textStyle="bold"
+                    android:textSize="9dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

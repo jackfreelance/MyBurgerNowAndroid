@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.burger.now.app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_nuage_orange"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:name=".waypoint.ApplicationMBN">
+
+        <receiver
+            android:name="my.burger.now.app.connexion.MyTestReceiver"
+            android:process=":remote" >
+        </receiver>
+
+        <service
+            android:name="my.burger.now.app.services.MapService"
+            android:exported="false"/>
+        <activity
+            android:name="my.burger.now.app.SpashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="my.burger.now.app.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDwzcXvGFdBCNY_-eWl7VSDZ0zLrz3LhLw" />
+
+        <activity
+            android:name="my.burger.now.app.LivActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_liv"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="my.burger.now.app.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="my.burger.now.app.P503Activity"
+            android:label="@string/title_activity_p503"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

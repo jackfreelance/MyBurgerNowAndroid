@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyBurgerNow'
+            keyPassword 'myburgernow2016'
+            storeFile file('C:/Users/8029/Desktop/muburgernow.jks')
+            storePassword 'myburgernow2016'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "my.burger.now.app"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 12
+        versionName "6.1.6"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile files('libs/android-async-http-1.4.4.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'io.socket:socket.io-client:0.7.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.akexorcist:googledirectionlibrary:1.0.4'
+    //region Description
+    //debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    //releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //endregion
+    //compile 'com.loopj.android:android-async-http:1.4.9'
+}
